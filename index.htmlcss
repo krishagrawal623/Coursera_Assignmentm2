@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food, LLC</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #007bff;
+            border: none;
+        }
+        .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .navbar-toggle {
+            border: 1px solid white;
+        }
+        .navbar-toggle .icon-bar {
+            background-color: white;
+        }
+        .navbar-nav li a {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        /* Page Heading */
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Menu Sections */
+        .menu-item {
+            background-color: white;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .menu-item h2 {
+            color: #007bff;
+            font-size: 1.8em;
+        }
+        .menu-item p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        /* Mobile Menu */
+        @media (max-width: 767px) {
+            .navbar-nav {
+                background-color: #007bff;
+            }
+            .navbar-nav li a {
+                color: white !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food, LLC</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav visible-xs">
+                    <li><a href="#chicken">Chicken</a></li>
+                    <li><a href="#beef">Beef</a></li>
+                    <li><a href="#sushi">Sushi</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <div class="container">
+        <h1>Our Menu</h1>
+    </div>
+
+    <!-- Menu Sections -->
+    <div class="container">
+        <div class="row">
+            <div id="chicken" class="col-md-4 col-sm-6 col-xs-12 menu-item">
+                <h2>Chicken</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+            </div>
+            <div id="beef" class="col-md-4 col-sm-6 col-xs-12 menu-item">
+                <h2>Beef</h2>
+                <p>Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus.</p>
+            </div>
+            <div id="sushi" class="col-md-4 col-sm-12 col-xs-12 menu-item">
+                <h2>Sushi</h2>
+                <p>Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
